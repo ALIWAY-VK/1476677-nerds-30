@@ -16,13 +16,11 @@
         <img src="https://via.placeholder.com/159.87x65.02" alt="Логотип Нёрдс">
       </a>
       <nav class="page-nav">
-
-        <a href="#" class="nav-link">Студия</a>
+        <a class="nav-link nav-link-active">Студия</a>
         <a href="#" class="nav-link">Клиенты</a>
-        <a href="#" class="nav-link">Магазин</a>
+        <a href="/catalog.html" class="nav-link">Магазин</a>
         <a href="#" class="nav-link">Контакты</a>
         <a href="#" class="nav-link">Корзина</a>
-
       </nav>
     </header>
     <main class="page-main">
@@ -75,35 +73,41 @@
             превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="company-service-list-items">Выполняем заказы на разработку:</p>
           <ul class="about-company-info">
-            <li class="company-service-item-1">Веб-сайтов любой сложности</li>
-            <li class="company-service-item-2">Мобильных приложений для iOS и Android</li>
-            <li class="company-service-item-3">Слайдшоу и видео для корпоративных презентаций</li>
+            <li class="company-service-item">Веб-сайтов любой сложности</li>
+            <li class="company-service-item">Мобильных приложений для iOS и Android</li>
+            <li class="company-service-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="about-company-right">
-          <p class="company-kpi-list-items">С 2004 года любим точность во всем:</p>
+          <p class="company-kpi-slogan">С 2004 года любим точность во всем:</p>
           <ul class="company-kpi-list">
-            <span>146%</span>
-            <li class="company-kpi-list-item-1">Уровень самоотдачи</li>
-            <span>100%</span>
-            <li class="company-kpi-list-item-2">Соблюдение сроков</li>
-            <span>50%</span>
-            <li class="company-kpi-list-item-3">Минимальная предоплата</li>
+            <li class="company-kpi-item">
+              <span>146%</span>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li class="company-kpi-item">
+              <span>100%</span>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li class="company-kpi-item">
+              <span>50%</span>
+              <p>Минимальная предоплата</p>
+            </li>
           </ul>
         </div>
       </section>
       <section class="partners">
         <ul class="partners-list">
-          <li class="partners-item-1">
+          <li class="partners-item">
             <img src="https://via.placeholder.com/199x67" alt="Логотип htmlacademy">
           </li>
-          <li class="partners-item-2">
+          <li class="partners-item">
             <img src="https://via.placeholder.com/209x90" alt="Логотип Borodinski">
           </li>
-          <li class="partners-item-3">
+          <li class="partners-item">
             <img src="https://via.placeholder.com/185x52" alt="Логотип Pink">
           </li>
-          <li class="partners-item-4">
+          <li class="partners-item">
             <img src="https://via.placeholder.com/173x84" alt="Логотип Mishka">
           </li>
         </ul>
@@ -113,24 +117,6 @@
         <p class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
         <a href="#" class="button">Напишите нам</a>
-      </section>
-      <section class="contact-form">
-        <h2>Напишите нам</h2>
-        <form action="#" method="POST">
-          <p class="name-holder">
-            <label for="name-holder">Ваше имя:</label>
-            <input type="text" name="your-name" id="name-holder" placeholder="Имя Фамилия">
-          </p>
-          <p class="email-holder">
-            <label for="email-holder">Ваш email:</label>
-            <input type="text" name="your-email" id="email-holder" placeholder="email@example.com">
-          </p>
-          <p class="letter-holder">
-            <label for="letter-holder">Текст письма:</label>
-            <input type="text" name="your-letter" id="letter-holder" placeholder="В свободной форме">
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -151,6 +137,24 @@
       </section>
     </footer>
   </div>
+  <section class="modal">
+    <h2 class="modal-title">Напишите нам</h2>
+    <form action="#" method="POST">
+      <p class="name-holder">
+        <label for="name-holder">Ваше имя:</label>
+        <input type="text" name="your-name" id="name-holder" placeholder="Имя Фамилия">
+      </p>
+      <p class="email-holder">
+        <label for="email-holder">Ваш email:</label>
+        <input type="text" name="your-email" id="email-holder" placeholder="email@example.com">
+      </p>
+      <p class="letter-holder">
+        <label for="letter-holder">Текст письма:</label>
+        <input type="text" name="your-letter" id="letter-holder" placeholder="В свободной форме">
+      </p>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
