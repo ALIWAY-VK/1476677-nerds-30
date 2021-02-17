@@ -1,13 +1,23 @@
 {
     "icons": [
         {
-            "src": "img/icons/192.png",
-            "type": "image/png",
+            "src": "img/favicons/192x192.svg",
+            "type": "image/svg",
+            "sizes": "32x32"
+        }
+        {
+            "src": "img/favicons/192x192.svg",
+            "type": "image/svg",
+            "sizes": "152x152"
+        },
+        {
+            "src": "img/favicons/192x192.svg",
+            "type": "image/svg",
             "sizes": "192x192"
         },
         {
-            "src": "img/icons/512.png",
-            "type": "image/png",
+            "src": "img/favicons/512x512.svg",
+            "type": "image/svg",
             "sizes": "512x512"
         }
     ]
