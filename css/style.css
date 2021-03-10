@@ -116,6 +116,7 @@ a {
     background-color: var(--basic-red);
     border: none;
     align-items: center;
+    border-radius: 3px;
 }
 
 .button:hover,
@@ -138,64 +139,44 @@ a {
 
 /* Button catalog */
 
-.submit .button {
+.button-secondary {
     background-color: var(--basic-dark-white);
-    border-radius: 3px;
+    color: var(--basic-black);
 }
 
-.submit .button:hover,
-.button:focus {
+.button-secondary:hover,
+.button-secondary:focus {
     background-color: var(--catalog-light-grey);
-    border-radius: 3px;
 }
 
-.submit .button:active {
+.button-secondary:active {
     background-color: var(--catalog-medium-grey);
-    color: rgba(0, 1, 1, 0.1);
-    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.button.disabled,
-.button:disabled {
-    cursor: default;
-    opacity: 0.3;
+.pagination-button {
     background-color: var(--basic-dark-white);
     border-radius: 3px;
+    color: var(--basic-black);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
 }
 
-.sort-arrow a {
-    background-color: var(--catalog-arrow-light-grey);
-    opacity: 0.2;
-}
-
-.sort-arrow a:hover {
-    background-color: var(--catalog-arrow-light-grey);
-}
-
-.sort-arrow a:focus {
-    background-color: var(catalog-arrow-black);
-}
-
-.pagination-button a {
-    background-color: var(--basic-dark-white);
-    border-radius: 3px;
-}
-
-.pagination-button a:hover {
+.pagination-button:hover,
+.pagination-button:focus {
     background-color: var(--catalog-light-grey);
-    border-radius: 3px;
 }
 
-.pagination-button a:focus {
+.pagination-button:active {
     background-color: var(--catalog-medium-grey);
-    border-radius: 3px;
-    opacity: 0.3;
-    color: rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination-button a:active {
-    background-color: var(--catalog-pagination-white);
-    border-radius: 3px;
+.pagination-button-active {
+    background-color: rgba(0, 0, 0, 0.0001);
+    border-color: var(--catalog-pagination-white);
 }
 
 
@@ -239,7 +220,7 @@ a {
 }
 
 .features-item-app .button:hover,
-.button:focus {
+.features-item-app .button:focus {
     background-color: var(--secondary-green);
 }
 
@@ -248,28 +229,14 @@ a {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.button.disabled,
-.button:disabled {
-    cursor: default;
-    opacity: 0.5;
-    background-color: var(--basic-green);
-}
-
 .features-item-ppt .button:hover,
-.button:focus {
+.features-item-ppt .button:focus {
     background-color: var(--secondary-yellow);
 }
 
 .features-item-ppt .button:active {
     background-color: var(--dark-yellow);
     color: rgba(255, 255, 255, 0.3);
-}
-
-.button.disabled,
-.button:disabled {
-    cursor: default;
-    opacity: 0.5;
-    background-color: var(--basic-yellow);
 }
 
 
