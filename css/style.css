@@ -40,6 +40,11 @@
     --basic-grey: #666666;
     --basic-extra-grey: #444444;
     --basic-medium-grey: #4D4D4D;
+    --catalog-light-grey: #DFDFDF;
+    --catalog-medium-grey: #D5D5D5;
+    --catalog-arrow-light-grey: #A6A6A6;
+    --catalog-arrow-black: #231F20;
+    --catalog-pagination-white: #DBDBDB;
 }
 
 
@@ -128,6 +133,69 @@ a {
     cursor: default;
     opacity: 0.5;
     background-color: var(--basic-red);
+}
+
+
+/* Button catalog */
+
+.submit .button {
+    background-color: var(--basic-dark-white);
+    border-radius: 3px;
+}
+
+.submit .button:hover,
+.button:focus {
+    background-color: var(--catalog-light-grey);
+    border-radius: 3px;
+}
+
+.submit .button:active {
+    background-color: var(--catalog-medium-grey);
+    color: rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+}
+
+.button.disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.3;
+    background-color: var(--basic-dark-white);
+    border-radius: 3px;
+}
+
+.sort-arrow a {
+    background-color: var(--catalog-arrow-light-grey);
+    opacity: 0.2;
+}
+
+.sort-arrow a:hover {
+    background-color: var(--catalog-arrow-light-grey);
+}
+
+.sort-arrow a:focus {
+    background-color: var(catalog-arrow-black);
+}
+
+.pagination-button a {
+    background-color: var(--basic-dark-white);
+    border-radius: 3px;
+}
+
+.pagination-button a:hover {
+    background-color: var(--catalog-light-grey);
+    border-radius: 3px;
+}
+
+.pagination-button a:focus {
+    background-color: var(--catalog-medium-grey);
+    border-radius: 3px;
+    opacity: 0.3;
+    color: rgba(0, 1, 1, 0.1);
+}
+
+.pagination-button a:active {
+    background-color: var(--catalog-pagination-white);
+    border-radius: 3px;
 }
 
 
@@ -258,6 +326,56 @@ a {
 .partners-list {
     display: flex;
     list-style: none;
+}
+
+
+/* Catalog */
+
+.price,
+.sort-types {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.sort-action {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    text-transform: uppercase;
+}
+
+
+/* Filters */
+
+.grids-filter-list,
+.features-filter-list {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.grids-filter-items,
+.features-filter-items {
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.filter-input-checkbox:hover+label,
+.grids-filter-itemtem:focus+label {
+    color: var(--basic-medium-grey);
 }
 
 
