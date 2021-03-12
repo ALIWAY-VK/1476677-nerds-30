@@ -61,10 +61,35 @@ body {
     /* background-color: var(--basic-white); */
     background-position: top center;
     background-repeat: no-repeat;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 a {
     text-decoration: none;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+
+/* Grid */
+
+.page {
+    height: 100%;
+}
+
+
+/* Page header */
+
+.page-header {
+    display: flex;
+    background-color: var(--basic-light-grey);
+    padding: 0 20px;
+    padding-top: 49px;
 }
 
 
@@ -74,7 +99,6 @@ a {
     background-color: var(--basic-white);
     width: 1160px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .page-nav {
@@ -137,6 +161,175 @@ a {
 }
 
 
+/* Promo */
+
+.promo {
+    background-color: var(--basic-light-grey);
+    padding: 0 20px;
+}
+
+.promo-slide {
+    display: none;
+    padding-bottom: 80px;
+}
+
+.promo-slide.active {
+    display: block;
+}
+
+.promo-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    margin: 0;
+    padding-top: 78px;
+}
+
+
+/* Features */
+
+.features {
+    padding: 80px 20px;
+}
+
+.features-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.features-item-title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features-item-app .button {
+    background-color: var(--basic-green);
+}
+
+.features-item-ppt .button {
+    background-color: var(--basic-yellow);
+}
+
+.features-item-app .button:hover,
+.features-item-app .button:focus {
+    background-color: var(--secondary-green);
+}
+
+.features-item-app .button:active {
+    background-color: var(--dark-green);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.features-item-ppt .button:hover,
+.features-item-ppt .button:focus {
+    background-color: var(--secondary-yellow);
+}
+
+.features-item-ppt .button:active {
+    background-color: var(--dark-yellow);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* About-company */
+
+.about-company {
+    list-style: none;
+    display: flex;
+}
+
+.company-kpi-list {
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    padding: 0;
+}
+
+.company-kpi-slogan {
+    margin-top: 284px;
+}
+
+.company-service-item {
+    list-style: none;
+}
+
+.about-company-header {
+    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.about-company-description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.company-service-list-items,
+.company-kpi-slogan {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.company-kpi-item-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.company-kpi-result {
+    text-align: center;
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+    padding: 0px;
+}
+
+
+/* Partners */
+
+.partners-list {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Catalog */
+
+.price,
+.sort-types {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.sort-action {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    text-transform: uppercase;
+}
+
+
 /* Button catalog */
 
 .button-secondary {
@@ -180,146 +373,6 @@ a {
 }
 
 
-/* Promo container */
-
-.promo-title {
-    font-weight: 500;
-    font-size: 55px;
-    line-height: 55px;
-    display: flex;
-    align-items: center;
-}
-
-
-/* Features */
-
-.features-list {
-    list-style: none;
-    display: flex;
-}
-
-.features-item-title {
-    text-align: center;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.visually-hidden h2 {
-    font-size: 24px;
-    line-height: 30px;
-}
-
-.features-item-app .button {
-    background-color: var(--basic-green);
-}
-
-.features-item-ppt .button {
-    background-color: var(--basic-yellow);
-}
-
-.features-item-app .button:hover,
-.features-item-app .button:focus {
-    background-color: var(--secondary-green);
-}
-
-.features-item-app .button:active {
-    background-color: var(--dark-green);
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.features-item-ppt .button:hover,
-.features-item-ppt .button:focus {
-    background-color: var(--secondary-yellow);
-}
-
-.features-item-ppt .button:active {
-    background-color: var(--dark-yellow);
-    color: rgba(255, 255, 255, 0.3);
-}
-
-
-/* About-company */
-
-.about-company {
-    list-style: none;
-}
-
-.about-company-header {
-    text-align: center;
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 500;
-    display: flex;
-}
-
-.about-company-description {
-    text-align: center;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    display: flex;
-}
-
-.company-service-list-items,
-.company-kpi-slogan {
-    text-align: center;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    display: flex;
-    text-transform: uppercase;
-}
-
-.company-kpi-item-text {
-    text-align: center;
-    font-size: 16px;
-    line-height: 18px;
-    display: flex;
-}
-
-.company-kpi-result {
-    text-align: center;
-    font-size: 45px;
-    line-height: 64px;
-    font-weight: 700;
-    display: flex;
-}
-
-
-/* Partners */
-
-.partners-list {
-    display: flex;
-    list-style: none;
-}
-
-
-/* Catalog */
-
-.price,
-.sort-types {
-    text-align: center;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    font-style: normal;
-    display: flex;
-    text-transform: uppercase;
-}
-
-.sort-action {
-    text-align: center;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    text-transform: uppercase;
-}
-
-
 /* Filters */
 
 .grids-filter-list,
@@ -346,7 +399,16 @@ a {
 }
 
 
-/* Main footer */
+/* Contacts */
+
+.contacts {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contacts-name {
+    margin: 0px;
+}
 
 .contacts-name {
     text-align: center;
@@ -362,6 +424,17 @@ a {
     font-size: 16px;
     line-height: 18px;
     display: flex;
+}
+
+
+/* Main footer */
+
+.page-footer {
+    padding: 20px;
+}
+
+.social-item {
+    list-style: none;
 }
 
 .social-message-header {
@@ -400,4 +473,18 @@ a {
 
 .modal {
     display: none;
+}
+
+
+/* Для сеток - удалить!!! */
+
+section {
+    outline: 5px solid rgba(55, 50, 50, 0.7);
+    outline-offset: -5px;
+}
+
+.page-header,
+.page-footer {
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;
 }
