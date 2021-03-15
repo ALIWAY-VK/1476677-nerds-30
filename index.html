@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-
 <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Дизайн-студия Нёрдс</title>
+
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="/img/favicons/nerds-icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/img/favicons/nerds-icon-180.png">
     <link rel="manifest" href="/manifest.webmanifest">
 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts? -->
+    <!-- link href="css/style-minimized.css" rel="stylesheet"?? -->
+
 </head>
 
 <body class="page-body">
-    <div class="container">
-        <header class="page-header">
+    <header class="page-header">
+        <div class="container">
             <a class="page-logo">
                 <img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
             </a>
             <nav class="page-nav">
-                <a class="nav-link nav-link-active">Студия</a>
-                <a href="#" class="nav-link">Клиенты</a>
-                <a href="/catalog.html" class="nav-link">Магазин</a>
-                <a href="#" class="nav-link">Контакты</a>
-                <a href="#" class="nav-link nav-link-basket">Корзина</a>
+                <div class="page-nav-container">
+                    <a class="nav-link nav-link-active">Студия</a>
+                    <a href="#" class="nav-link">Клиенты</a>
+                    <a href="/catalog.html" class="nav-link">Магазин</a>
+                    <a href="#" class="nav-link">Контакты</a>
+                </div>
+                <a class="nav-link nav-link-basket" href="#">Корзина</a>
             </nav>
-        </header>
-        <main class="page-main">
-            <h1 class="visually-hidden">Вэб-студия из Краснодара</h1>
-            <section class="promo">
+        </div>
+    </header>
+
+    <main class="page-main">
+        <h1 class="visually-hidden">Вэб-студия из Краснодара</h1>
+
+        <section class="promo">
+            <div class="container">
                 <h2 class="visually-hidden">Промо слайды</h2>
                 <div class="promo-container">
                     <div class="promo-slide slide-1 active">
@@ -49,8 +58,11 @@
                         <a href="#" class="button">Узнать Больше</a>
                     </div>
                 </div>
-            </section>
-            <section class="features">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="features-list">
                     <li class="features-item features-item-web-site">
@@ -69,104 +81,123 @@
                         <a href="#" class="button">Заказать</a>
                     </li>
                 </ul>
-            </section>
-            <section class="about-company">
-                <h2 class="visually-hidden">Информация о компании</h2>
-                <div class="about-company-left">
-                    <p class="about-company-header">Мы - маленьная, но гордая дизайн-студия из Краснодара.</p>
-                    <p class="about-company-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-                    <p class="company-service-list-items">Выполняем заказы на разработку:</p>
-                    <ul class="about-company-info">
-                        <li class="company-service-item">Веб-сайтов любой сложности</li>
-                        <li class="company-service-item">Мобильных приложений для iOS и Android</li>
-                        <li class="company-service-item">Слайдшоу и видео для корпоративных презентаций</li>
-                    </ul>
-                </div>
-                <div class="about-company-right">
-                    <p class="company-kpi-slogan">С 2004 года любим точность во всем:</p>
-                    <ul class="company-kpi-list">
-                        <li class="company-kpi-item">
-                            <span class="company-kpi-result">146%</span>
-                            <p class="company-kpi-item-text">Уровень самоотдачи</p>
-                        </li>
-                        <li class="company-kpi-item">
-                            <span class="company-kpi-result">100%</span>
-                            <p class="company-kpi-item-text">Соблюдение сроков</p>
-                        </li>
-                        <li class="company-kpi-item">
-                            <span class="company-kpi-result">50%</span>
-                            <p class="company-kpi-item-text">Минимальная предоплата</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="partners">
-                <ul class="partners-list">
-                    <li class="partners-item">
-                        <a href="#" class="partners-link">
-                            <img src="img/logo-html-academy.png" alt="Логотип htmlacademy" width="199" height="68">
-                        </a>
+            </div>
+        </section>
+
+        <section class="about-company container">
+            <h2 class="visually-hidden">Информация о компании</h2>
+            <div class="about-company-left">
+                <p class="about-company-header">Мы - маленьная, но гордая дизайн-студия из Краснодара.</p>
+                <p class="about-company-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <p class="company-service-list-items">Выполняем заказы на разработку:</p>
+                <ul class="about-company-info">
+                    <li class="company-service-item">Веб-сайтов любой сложности</li>
+                    <li class="company-service-item">Мобильных приложений для iOS и Android</li>
+                    <li class="company-service-item">Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
+            <div class="about-company-right">
+                <p class="company-kpi-slogan">С 2004 года любим точность во всем:</p>
+                <ul class="company-kpi-list">
+                    <li class="company-kpi-item">
+                        <span class="company-kpi-result">146%</span>
+                        <p class="company-kpi-item-text">Уровень самоотдачи</p>
                     </li>
-                    <li class="partners-item">
-                        <a href="#" class="partners-link">
-                            <img src="img/logo-borodinski.png" alt="Логотип Borodinski" width="209" height="90">
-                        </a>
+                    <li class="company-kpi-item">
+                        <span class="company-kpi-result">100%</span>
+                        <p class="company-kpi-item-text">Соблюдение сроков</p>
                     </li>
-                    <li class="partners-item">
-                        <a href="#" class="partners-link">
-                            <img src="img/logo-pink.png" alt="Логотип Pink" width="185" height="52">
-                        </a>
-                    </li>
-                    <li class="partners-item">
-                        <a href="#" class="partners-link">
-                            <img src="img/logo-mishka.png" alt="Логотип Mishka" width="173" height="84">
-                        </a>
+                    <li class="company-kpi-item">
+                        <span class="company-kpi-result">50%</span>
+                        <p class="company-kpi-item-text">Минимальная предоплата</p>
                     </li>
                 </ul>
-            </section>
-            <section class="contacts">
-                <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
-                <p class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
-                <a href="#" class="button">Напишите нам</a>
-            </section>
-        </main>
-        <footer class="page-footer">
-            <ul class="social">
-                <li class="social-item">
-                    <a href="https://vk.com/" target="_blank" class="social-link social-link-vk">Vkontakte</a>
+            </div>
+        </section>
+
+        <section class="partners container">
+            <h2 class="visually-hidden">Наши партнеры</h2>
+            <ul class="partners-list">
+                <li class="partners-item">
+                    <a href="#" class="partners-link">
+                        <img src="img/logo-html-academy.png" alt="Логотип htmlacademy" width="199" height="68">
+                    </a>
                 </li>
-                <li class="social-item">
-                    <a href="https://www.facebook.com/" target="_blank" class="social-link social-link-fb">Facebook</a>
+                <li class="partners-item">
+                    <a href="#" class="partners-link">
+                        <img src="img/logo-borodinski.png" alt="Логотип Borodinski" width="209" height="90">
+                    </a>
                 </li>
-                <li class="social-item">
-                    <a href="https://www.instagram.com/" target="_blank" class="social-link social-link-inst">Instagram</a>
+                <li class="partners-item">
+                    <a href="#" class="partners-link">
+                        <img src="img/logo-pink.png" alt="Логотип Pink" width="185" height="52">
+                    </a>
+                </li>
+                <li class="partners-item">
+                    <a href="#" class="partners-link">
+                        <img src="img/logo-mishka.png" alt="Логотип Mishka" width="173" height="84">
+                    </a>
                 </li>
             </ul>
-            <section class="social-info">
-                <p class="social-message-header">Давайте дружить, это выгодно!</p>
-                <p class="social-message">Скидка 10% для друзей из социальных сетей</p>
+        </section>
+
+        <section class="contacts-map">
+            <!-- Ссылка на катру <iframe> -->
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts-info">
+                        <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
+                        <p class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
+                        <a href="#" class="button">Напишите нам</a>
+                    </div>
+                </div>
             </section>
-        </footer>
-    </div>
+        </section>
+
+    </main>
+
+    <footer class="page-footer container">
+        <ul class="social">
+            <li class="social-item">
+                <a href="https://vk.com/" target="_blank" class="social-link social-link-vk">Vkontakte</a>
+            </li>
+            <li class="social-item">
+                <a href="https://www.facebook.com/" target="_blank" class="social-link social-link-fb">Facebook</a>
+            </li>
+            <li class="social-item">
+                <a href="https://www.instagram.com/" target="_blank" class="social-link social-link-inst">Instagram</a>
+            </li>
+        </ul>
+        <section class="social-info">
+            <p class="social-message-header">Давайте дружить, это выгодно!</p>
+            <p class="social-message">Скидка 10% для друзей из социальных сетей</p>
+        </section>
+
+    </footer>
+
     <section class="modal">
         <h2 class="modal-title">Напишите нам</h2>
-        <form action="#" method="POST">
-            <p class="name-holder">
-                <label for="name-holder">Ваше имя:</label>
-                <input type="text" name="your-name" id="name-holder" placeholder="Имя Фамилия">
-            </p>
-            <p class="email-holder">
-                <label for="email-holder">Ваш email:</label>
-                <input type="text" name="your-email" id="email-holder" placeholder="email@example.com">
-            </p>
-            <p class="letter-holder">
-                <label for="letter-holder">Текст письма:</label>
-                <input type="text" name="your-letter" id="letter-holder" placeholder="В свободной форме">
-            </p>
-            <button class="button" type="submit">Отправить</button>
+        <button class="close-btn" type="button" aria-label="Закрыть"></button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-container">
+                <p class="modal-item">
+                    <label for="modal-name" class="modal-label">Ваше имя:</label>
+                    <input class="modal-name" type="text" name="your-name" id="modal-name" placeholder="Имя Фамилия">
+                </p>
+                <p class="modal-item">
+                    <label for="modal-email" class="modal-label">Ваш email:</label>
+                    <input class="modal-email" type="text" name="your-email" id="modal-email" placeholder="email@example.com">
+                </p>
+                <p class="modal-item">
+                    <label for="modal-letter" class="modal-label">Текст письма:</label>
+                    <textarea name="your-letter" id="modal-letter" placeholder="В свободной форме">
+                </p>
+            </div>
+          <button class="button" type="submit">Отправить</button>
         </form>
     </section>
+
 </body>
 
 </html>

@@ -57,8 +57,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-light-black);
-    background-color: var(--basic-red);
-    /* background-color: var(--basic-white); */
+    background-color: var(--basic-white);
     background-position: top center;
     background-repeat: no-repeat;
     min-height: 100%;
@@ -88,41 +87,50 @@ a {
 .page-header {
     display: flex;
     background-color: var(--basic-light-grey);
-    padding: 0 20px;
     padding-top: 49px;
+}
+
+.page-header .container {
+    display: flex;
 }
 
 
 /* Page navigation */
 
 .container {
-    background-color: var(--basic-white);
     width: 1160px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .page-nav {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 26px;
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-    text-align: center;
     color: var(--basic-black);
-    vertical-align: middle;
     text-transform: uppercase;
     background-color: transparent;
 }
 
-.page-nav a {
+.nav-link {
     color: var(--basic-black);
+    margin-left: 45px;
 }
 
-.page-nav a:hover {
+.nav-link:hover {
     color: var(--basic-red);
 }
 
-.page-nav a:focus {
+.nav-link:focus {
     color: var(--basic-black);
     opacity: 0.3;
+}
+
+.nav-link-basket {
+    margin-left: auto;
 }
 
 
@@ -165,7 +173,6 @@ a {
 
 .promo {
     background-color: var(--basic-light-grey);
-    padding: 0 20px;
 }
 
 .promo-slide {
@@ -189,7 +196,7 @@ a {
 /* Features */
 
 .features {
-    padding: 80px 20px;
+    padding: 80px 0;
 }
 
 .features-list {
@@ -241,12 +248,23 @@ a {
 .about-company {
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    padding-top: 39px;
+    padding-bottom: 75px;
+}
+
+.about-company-left {
+    width: 660px;
+}
+
+.about-company-right {
+    width: 360px;
 }
 
 .company-kpi-list {
     list-style: none;
     display: flex;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0;
 }
 
@@ -298,15 +316,86 @@ a {
 
 /* Partners */
 
+.partners {
+    padding-top: 46px;
+    padding-bottom: 44px;
+}
+
 .partners-list {
     display: flex;
+    align-items: center;
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
 
+.partners-item {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Contacts */
+
+.contacts {
+    position: relative;
+}
+
+.contacts-map {
+    background-color: yellow;
+    height: 416px;
+}
+
+.contacts-info {
+    position: absolute;
+    top: 54px;
+    background-color: var(--basic-white);
+    padding: 40px;
+}
+
+.contacts-name {
+    margin: 0;
+}
+
+.contacts-name {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    display: flex;
+}
+
+.contacts-adress,
+.contacts-phone {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+}
+
 
 /* Catalog */
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    align-content: start;
+}
+
+.page-header-title {
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 108px;
+    margin: 0;
+}
+
+.container-page-main-header {
+    background-color: var(--basic-dark-white);
+    display: flex;
+    text-align: center;
+    padding: 20px 356px 108px 357px;
+}
 
 .price,
 .sort-types {
@@ -330,7 +419,7 @@ a {
 }
 
 
-/* Button catalog */
+/* Сatalog page Button */
 
 .button-secondary {
     background-color: var(--basic-dark-white);
@@ -373,7 +462,7 @@ a {
 }
 
 
-/* Filters */
+/* Catalog page filters */
 
 .grids-filter-list,
 .features-filter-list {
@@ -399,38 +488,16 @@ a {
 }
 
 
-/* Contacts */
-
-.contacts {
-    padding: 0px;
-    margin: 0px;
-}
-
-.contacts-name {
-    margin: 0px;
-}
-
-.contacts-name {
-    text-align: center;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    display: flex;
-}
-
-.contacts-adress,
-.contacts-phone {
-    text-align: center;
-    font-size: 16px;
-    line-height: 18px;
-    display: flex;
-}
-
-
 /* Main footer */
 
 .page-footer {
-    padding: 20px;
+    display: flex;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.social {
+    display: flex;
 }
 
 .social-item {
@@ -450,22 +517,6 @@ a {
     font-size: 16px;
     line-height: 22px;
     display: flex;
-}
-
-.page-footer {
-    padding: 10px;
-}
-
-
-/* Social button */
-
-.social-items {
-    color: inherit;
-}
-
-.social-button:hover,
-.social-button:focus {
-    background-color: var(--basic-black);
 }
 
 
