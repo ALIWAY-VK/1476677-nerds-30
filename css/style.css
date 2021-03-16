@@ -51,7 +51,11 @@
 /* Global */
 
 body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
     margin: 0;
+    min-height: 100%;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -60,10 +64,6 @@ body {
     background-color: var(--basic-white);
     background-position: top center;
     background-repeat: no-repeat;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
 }
 
 a {
@@ -269,7 +269,8 @@ a {
 }
 
 .company-kpi-slogan {
-    margin-top: 284px;
+    padding-top: 284px;
+    margin-top: 0;
 }
 
 .company-service-item {
@@ -379,7 +380,7 @@ a {
 
 .catalog-container {
     display: grid;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: 400px 1fr;
     align-content: start;
 }
 
@@ -390,11 +391,26 @@ a {
     margin: 0;
 }
 
-.container-page-main-header {
-    background-color: var(--basic-dark-white);
+.sort {
     display: flex;
-    text-align: center;
-    padding: 20px 356px 108px 357px;
+}
+
+.sort-list {
+    display: flex;
+}
+
+.sort-directions {
+    display: flex;
+}
+
+.templates-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    grid-row-gap: 30px;
+    grid-column-gap: 40px;
 }
 
 .price,
@@ -434,6 +450,13 @@ a {
 .button-secondary:active {
     background-color: var(--catalog-medium-grey);
     color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .pagination-button {
@@ -538,4 +561,8 @@ section {
 .page-footer {
     outline: 5px solid rgba(0, 255, 0, 0.7);
     outline-offset: -5px;
+}
+
+outline-offset: -5px;
+
 }
