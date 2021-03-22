@@ -283,32 +283,14 @@ img {
 
 /* Promo - Slider */
 
-.promo {
+.promo,
+.promo-container {
     padding: 0;
     width: 100%;
     list-style: none;
     margin-block-start: 0;
     margin-block-end: 0;
     background-color: var(--basic-dark-white);
-}
-
-.promo-slide {
-    display: none;
-    padding-bottom: 80px;
-}
-
-.promo-slide .button {
-    padding-right: 56px;
-    padding-left: 52px;
-}
-
-.promo-slide img {
-    object-fit: cover;
-    background-color: var(--basic-light-grey);
-}
-
-.promo-slide.active {
-    display: block;
 }
 
 .slide-1 {
@@ -329,6 +311,11 @@ img {
     background-position: 96% -4px;
 }
 
+.promo-slide {
+    color: var(--basic-light-black);
+    padding-bottom: 80px;
+}
+
 .promo-title {
     font-weight: 500;
     font-size: 55px;
@@ -338,6 +325,28 @@ img {
     margin-bottom: 37px;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+.promo-slide:first-child .slider-title {
+    padding-top: 74px;
+    margin-bottom: 25px;
+}
+
+.promo-text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 28px;
+}
+
+.promo-slide:first-child .promo-text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 40px;
+}
+
+.promo-slide img {
+    object-fit: cover;
+    background-color: var(--basic-light-grey);
 }
 
 .slider-controls {
@@ -371,6 +380,10 @@ img {
     max-width: 240px;
     padding-top: 14px;
     padding-bottom: 12px;
+}
+
+.promo-slide.active {
+    display: block;
 }
 
 
@@ -533,14 +546,12 @@ img {
 }
 
 .about-company-header {
-    text-align: center;
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
 
 .about-company-description {
-    text-align: center;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -548,7 +559,6 @@ img {
 
 .company-service-list-items,
 .company-kpi-slogan {
-    text-align: center;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -1104,17 +1114,17 @@ input:invalid {
 
 .price-filter legend {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 24px;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 .range-controls {
     position: relative;
-    height: 80px;
+    height: 41px;
     background-color: var(--basic-dark-white);
-    border-radius: 3px;
-    margin-bottom: 14px;
+    border-radius: 5px;
+    margin-bottom: 15px;
     padding-top: 39px;
     height: 41px;
     padding-right: 20px;
@@ -1164,6 +1174,11 @@ input:invalid {
     text-transform: uppercase;
 }
 
+.price-controls label {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+}
+
 .price-controls input {
     font-family: inherit;
     font-size: inherit;
@@ -1173,7 +1188,7 @@ input:invalid {
     text-align: center;
     color: var(--basic-light-black);
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     background: var(--basic-dark-white);
 }
 
