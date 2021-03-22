@@ -476,7 +476,6 @@ img {
     justify-content: space-between;
     padding-top: 39px;
     padding-bottom: 75px;
-    border-bottom: 2px solid var(--basic-dark-white);
     align-content: flex-start;
 }
 
@@ -518,6 +517,17 @@ img {
 .about-company-right img {
     width: 360px;
     height: 208px;
+}
+
+
+/* Проверить */
+
+.about-company-right::before {
+    background-image: url("/img/nerds-illustration.png");
+    background-color: var(--basic-white);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
 }
 
 .about-company-right p {
@@ -594,6 +604,7 @@ img {
     padding: 0px;
     margin: 0px;
     border-bottom: 2px solid var(--basic-dark-white);
+    border-top: 2px solid var(--basic-dark-white);
 }
 
 .partners-item {
@@ -1171,12 +1182,12 @@ input:invalid {
 .price-controls {
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
 }
 
 .price-controls label {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 .price-controls input {
