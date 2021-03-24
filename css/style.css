@@ -158,8 +158,8 @@ img {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    padding-top: 26px;
-    margin-left: 202px;
+    padding-top: 14px;
+    margin-left: 157px;
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
@@ -170,7 +170,7 @@ img {
 
 .nav-link {
     color: var(--basic-black);
-    margin-left: 45px;
+    margin-left: 43px;
 }
 
 .nav-link:hover {
@@ -294,27 +294,27 @@ img {
     background-color: var(--basic-dark-white);
 }
 
+.promo {
+    position: relative;
+}
+
 .slide-1 {
     background-image: url("../img/nerds-index-slide1.png");
-    background-repeat: no-repeat;
-    background-position: 96% -4px;
 }
 
 .slide-2 {
     background-image: url("../img/nerds-index-slide2.png");
-    background-repeat: no-repeat;
-    background-position: 96% -4px;
 }
 
 .slide-3 {
     background-image: url("../img/nerds-index-slide2.png");
-    background-repeat: no-repeat;
-    background-position: 96% -4px;
 }
 
 .promo-slide {
     color: var(--basic-light-black);
-    padding-bottom: 80px;
+    padding-bottom: 94px;
+    background-repeat: no-repeat;
+    background-position: 99% -4px;
 }
 
 .promo-title {
@@ -323,9 +323,7 @@ img {
     line-height: 55px;
     margin: 0;
     padding-top: 74px;
-    margin-bottom: 37px;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin-bottom: 27px;
 }
 
 .promo-slide:first-child .slider-title {
@@ -334,20 +332,22 @@ img {
 }
 
 .promo-text {
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin: 0;
     margin-bottom: 28px;
 }
 
 .promo-slide:first-child .promo-text {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-bottom: 40px;
+    margin: 0;
+    margin-bottom: 49px;
 }
 
 .promo-slide img {
     object-fit: cover;
     background-color: var(--basic-light-grey);
+}
+
+.promo-slide .button {
+    padding: 15px 55px;
 }
 
 .slider-controls {
@@ -362,7 +362,7 @@ img {
 
 .slider-controls button {
     padding: 0;
-    margin-right: 10px;
+    margin-right: 17px;
     width: 18px;
     height: 18px;
     background-color: var(--basic-white);
@@ -417,8 +417,9 @@ img {
 
 .features-item {
     padding-top: 146px;
+    padding-bottom: 15px;
     position: relative;
-    margin-right: 100px;
+    margin-right: 140px;
 }
 
 .features-item::before {
@@ -444,6 +445,7 @@ img {
 
 .features-item-description {
     width: 260px;
+    margin-bottom: 43px;
 }
 
 .features-item-title {
@@ -451,6 +453,7 @@ img {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 17px;
 }
 
 .features-item-app .button {
@@ -489,7 +492,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding-top: 39px;
-    padding-bottom: 75px;
+    padding-bottom: 12px;
     align-content: flex-start;
 }
 
@@ -529,12 +532,9 @@ img {
 }
 
 .about-company-right p {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    text-align: center;
     margin-bottom: 30px;
-    margin-top: 31px;
-    padding-right: 0px;
+    margin-top: 0;
+    padding-right: 0;
 }
 
 .company-kpi-list {
@@ -545,8 +545,8 @@ img {
 }
 
 .company-kpi-slogan {
-    padding-top: 284px;
-    margin-top: 0;
+    text-align: center;
+    padding-top: 248px;
     position: relative;
 }
 
@@ -570,12 +570,15 @@ img {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 33px;
 }
 
 .about-company-description {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    margin-bottom: 40px;
 }
 
 .company-service-list-items,
@@ -586,8 +589,11 @@ img {
     text-transform: uppercase;
 }
 
+.company-service-list-items {
+    margin-bottom: 23px;
+}
+
 .company-kpi-item-text {
-    text-align: center;
     font-size: 16px;
     line-height: 18px;
 }
@@ -598,15 +604,19 @@ img {
     line-height: 64px;
     font-weight: 700;
     padding: 0px;
+    margin-right: 22px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 12px;
+}
+
+.company-kpi-result sup {
+    font-size: 60%;
+    top: -0.6em;
 }
 
 
 /* Partners */
-
-.partners-list {
-    padding-top: 46px;
-    padding-bottom: 44px;
-}
 
 .partners-list {
     display: flex;
@@ -614,6 +624,11 @@ img {
     list-style: none;
     border-bottom: 2px solid var(--basic-dark-white);
     border-top: 2px solid var(--basic-dark-white);
+    padding-top: 46px;
+    padding-bottom: 37px;
+    padding-left: 0;
+    margin-left: -17px;
+    margin-right: -17px;
 }
 
 .partners-item {
@@ -642,6 +657,7 @@ img {
 }
 
 .contacts-map {
+    padding-top: 127px;
     border: 0;
     width: 100%;
     height: 416px;
@@ -653,8 +669,16 @@ img {
 .contacts-info {
     position: absolute;
     background-color: var(--basic-white);
-    top: 54px;
+    top: -8px;
     padding: 49px 50px 47px 50px;
+}
+
+.contacts-info .button {
+    margin-top: -2px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 45px;
+    padding-right: 44px;
 }
 
 .contacts-name {
@@ -683,17 +707,25 @@ img {
     margin-bottom: 38px;
 }
 
+.contacts-phone a {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
 
 /* Main footer */
 
 .page-footer {
     display: flex;
-    padding-top: 68px;
-    padding-bottom: 68px;
+    padding-top: 5px;
+    padding-bottom: 35px;
 }
 
 .social {
     display: flex;
+    padding-left: 0;
+    margin: 0;
 }
 
 .social-item {
@@ -722,6 +754,10 @@ img {
     box-shadow: inset 0px 3px 0px var(--active-shadow-grey);
 }
 
+.social-info {
+    margin-left: 126px;
+}
+
 .social-message-header {
     text-align: center;
     font-size: 36px;
@@ -729,16 +765,15 @@ img {
     font-weight: 700;
     display: flex;
     padding-top: 7px;
-    padding-left: 139px;
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
 .social-message {
+    margin-top: 11px;
     text-align: center;
     font-size: 16px;
     line-height: 22px;
-    padding-left: 139px;
     display: flex;
     color: var(--basic-extra-grey);
 }
